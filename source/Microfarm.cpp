@@ -8,7 +8,6 @@ extern uint8_t testVar; // Temporary variable for storing test data
 static uint8_t TEMPERATURE_COMMAND[] 	= {0x00, 0x04};
 static uint8_t MOISTURE_COMMAND[] 		= {0x0F, 0x10};
 static uint8_t ADDR[]					= {0x36, 0x37, 0x38, 0x39};
-//uint16_t LEVELS[8];
 
 // Function Declarations
 void updateSensors();
@@ -35,7 +34,6 @@ void loop()
 
 	if(counter > CYCLES_PER_SENSOR_POLL) // Every once and a while, check on the soil moisture sensor_data
 	{
-		superBlink();
 		counter = 0;
 		LEDon();
 		updateSensors();

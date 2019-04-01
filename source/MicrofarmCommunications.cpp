@@ -17,8 +17,6 @@ void 		handleI2CMaster();
 void handleI2CSlave();
 void handleDAQMessage();
 
-uint8_t 	testVar = 		0x00;
-
 /*********************/
 /* Utility Functions */
 /*********************/
