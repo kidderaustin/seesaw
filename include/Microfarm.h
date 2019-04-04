@@ -2,7 +2,7 @@
 #define MICROFARM_H
 
 // This value MUST be different for each seesaw board on the bus!
-#define SEESAW_SLAVE_ADDRESS 	0x10
+#define SEESAW_SLAVE_ADDRESS 	0x15
 
 // Other configuration
 #define MYDELAY_CYCLES 			500000

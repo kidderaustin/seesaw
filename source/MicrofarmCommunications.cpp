@@ -251,8 +251,6 @@ uint8_t i2cm_begin_read_operation(uint8_t addr, uint8_t* buffer)
 	if(sensor_status.change == COMMS_RX)
 		(*buffer) = sensor_status.receive; // Comes with Data!
 
-	//testVar = sensor_status.change;
-
 	return sensor_status.change == COMMS_RX;
 }
 
